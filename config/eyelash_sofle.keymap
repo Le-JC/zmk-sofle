@@ -139,14 +139,16 @@
             label = "FPS";
         };
 
-        layer_7 {
+        POE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp GRAVE  &kp N1  &kp N2    &kp N3     &kp N4     &kp N5    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &kp Q   &kp W     &kp E      &kp R      &kp T     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPS   &kp A   &kp S     &kp D      &kp F      &kp G     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp Z   &kp X     &kp C      &kp V      &kp B     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &kp LALT  &kp LCTRL  &kp SPACE  &trans    &trans  &trans  &trans  &trans  &trans  &to 0
             >;
+
+            label = "POE";
         };
     };
 };
