@@ -62,6 +62,26 @@
         };
     };
 
+    macros {
+        kvm_main_computer: kvm_main_computer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLCK &kp SLCK &kp NUMBER_1>;
+            label = "KVM_MAIN_COMPUTER";
+            wait-ms = <100>;
+            tap-ms = <100>;
+        };
+
+        kvm_second_computer: kvm_second_computer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLCK &kp SLCK &kp NUMBER_2>;
+            label = "KVM_SECOND_COMPUTER";
+            wait-ms = <100>;
+            tap-ms = <100>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
