@@ -88,16 +88,16 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
+        Movement {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(LC(F1))  &kp LA(LC(F2))  &kp LA(LC(F3))  &kp LA(LC(F4))  &kp LA(LC(F5))  &kp LA(LC(F6))    &trans  &kp LA(LC(F7))  &kp LA(LC(F8))  &kp LA(LC(F9))  &kp LA(LC(F10))  &kp LA(LC(F11))  &kp LA(LC(F12))
+&trans          &trans          &trans          &trans          &trans          &trans            &trans  &kp HOME        &kp PG_DN       &kp PG_UP       &kp END          &trans           &trans
+&trans          &kp LALT        &kp LGUI        &kp LCTRL       &kp LSHFT       &trans            &trans  &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT        &trans           &trans
+&trans          &trans          &trans          &trans          &trans          &trans            &trans  &trans          &trans          &trans          &trans           &trans           &trans
+&trans          &trans          &trans          &trans          &trans          &trans            &trans  &trans          &trans          &trans          &trans           &to 0
             >;
 
-            display-name = "layer3";
+            display-name = "Movement";
             sensor-bindings = <&scroll_encoder>;
         };
 
