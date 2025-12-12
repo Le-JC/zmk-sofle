@@ -43,7 +43,22 @@
 
         softoff {
             bindings = <&soft_off>;
-            key-positions = <14 28 40>;
+            key-positions = <5 31 56>;
+        };
+
+        escape_dual_keypress {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        combo_print_screen {
+            bindings = <&kp PSCRN>;
+            key-positions = <11 12>;
+        };
+
+        movement_layer {
+            bindings = <&mo 3>;
+            key-positions = <55 61>;
         };
     };
 
