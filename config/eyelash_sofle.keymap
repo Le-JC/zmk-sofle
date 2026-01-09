@@ -192,40 +192,16 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        Special {
+        Hardware {
             bindings = <
-&trans  &trans           &trans                            &trans                         &trans                           &trans                              &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans                            &trans                         &trans                           &trans                              &trans  &trans  &trans  &trans  &trans  &trans  &sys_reset
 &trans  &trans           &rgb_ug RGB_COLOR_HSB(176,62,55)  &rgb_ug RGB_COLOR_HSB(0,0,97)  &rgb_ug RGB_COLOR_HSB(0,100,48)  &rgb_ug RGB_COLOR_HSB(291,67,40)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI                   &rgb_ug RGB_SAI                &rgb_ug RGB_HUI                  &rgb_ug RGB_ON                      &trans  &trans  &tog 6  &tog 7  &trans  &trans  &trans
+&trans  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI                   &rgb_ug RGB_SAI                &rgb_ug RGB_HUI                  &rgb_ug RGB_ON                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD                   &rgb_ug RGB_SAD                &rgb_ug RGB_HUD                  &rgb_ug RGB_OFF                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans           &trans                            &rgb_ug RGB_EFR                &rgb_ug RGB_TOG                  &rgb_ug RGB_EFF                     &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "Special";
-        };
-
-        FPS {
-            bindings = <
-&kp ESC    &kp N1     &kp N2    &kp N3     &kp N4     &kp N5       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp GRAVE  &kp TAB    &kp Q     &kp W      &kp E      &kp R        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp CAPS   &kp A     &kp S      &kp D      &kp F        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LALT   &kp LSHFT  &kp Z     &kp X      &kp C      &kp V        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp LSHFT  &kp LALT  &kp LCTRL  &kp SPACE  &kp SPACE    &trans  &trans  &trans  &trans  &trans  &to 0
-            >;
-
-            label = "FPS";
-        };
-
-        POE {
-            bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3     &kp N4     &kp N5       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB    &kp Q   &kp W     &kp E      &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp CAPS   &kp A   &kp S     &kp D      &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp Z   &kp X     &kp C      &kp V      &kp B        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &kp LALT  &kp LCTRL  &kp SPACE  &kp SPACE    &trans  &trans  &trans  &trans  &trans  &to 0
-            >;
-
-            label = "POE";
+            label = "Hardware";
         };
     };
 };
